@@ -11,8 +11,7 @@ RUN apt-get update && \
 
 FROM scratch
 
-COPY --from=builder /go/bin/go-apt-cacher /
-COPY --from=builder /go/bin/go-apt-mirror /
+COPY --from=builder /go/bin/go-apt-cacher /go/bin/go-apt-mirror /
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
 VOLUME [ "/var/lib/aptutil", "/var/spool/go-apt-mirror", "/var/spool/go-apt-cacher"]
