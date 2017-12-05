@@ -14,7 +14,7 @@ $ docker container run \
     --read-only \
     -v /etc/go-apt-cacher.toml:/etc/go-apt-cacher.toml:ro' \
     -v /var/spool/go-apt-cacher:/var/spool/go-apt-cacher \
-    jacksgt/aptutil go-apt-cacher
+    jacksgt/aptutil /go-apt-cacher
 ```
 
 ### go-apt-mirror
@@ -27,7 +27,7 @@ $ docker container run \
     --read-only \
     -v /etc/go-apt-mirror.toml:/etc/apt/mirror.toml:ro \
     -v /var/spool/go-apt-mirror:/var/spool/go-apt-mirror \
-    jacksgt/aptutil go-apt-mirror
+    jacksgt/aptutil /go-apt-mirror
 ```
 
 ## License
