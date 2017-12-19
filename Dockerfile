@@ -3,7 +3,7 @@ FROM golang:1.9 as builder
 ENV CGO_ENABLED=0 \
     GODEBUG=netdns=go
 
-RUN go get -u github.com/jacksgt/aptutil/...
+RUN go get -u github.com/cybozu-go/aptutil/...
 
 RUN apt-get update && \
     apt-get install ca-certificates
