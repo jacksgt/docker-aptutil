@@ -12,7 +12,7 @@ Optionally, mount `/var/spool/go-apt-cacher` for persistence (required for `--re
 ```
 $ docker container run \
     --read-only \
-    -v /etc/go-apt-cacher.toml:/etc/go-apt-cacher.toml:ro' \
+    -v /etc/go-apt-cacher.toml:/etc/go-apt-cacher.toml:ro \
     -v /var/spool/go-apt-cacher:/var/spool/go-apt-cacher \
     jacksgt/aptutil /go-apt-cacher
 ```
