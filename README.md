@@ -1,5 +1,10 @@
 # docker-aptutil
 
+[![ImageLayers Size](https://img.shields.io/imagelayers/image-size/_/jacksgt/aptutil.svg)](https://hub.docker.com/r/jacksgt/aptutil/)
+[![Docker Automated build](https://img.shields.io/docker/automated/jacksgt/aptutil.svg)](https://hub.docker.com/r/jacksgt/aptutil/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/jacksgt/aptutil.svg)](https://hub.docker.com/r/jacksgt/aptutil/)
+[![Docker Stars](https://img.shields.io/docker/stars/jacksgt/aptutil.svg)](https://hub.docker.com/r/jacksgt/aptutil/)
+
 Docker Image for [aptutil](https://github.com/cybozu-go/aptutil) containing `go-apt-cacher` and `go-apt-mirror`.
 
 ## Usage
