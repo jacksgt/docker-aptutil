@@ -1,9 +1,14 @@
 FROM golang:1.11 as builder
 
+ARG VERSION=1.4.1
+
 ENV CGO_ENABLED=0 \
     GODEBUG=netdns=go
 
-RUN go get -u github.com/cybozu-go/aptutil/...
+RUN go get -u -d github.com/cybozu-go/aptutil/... && \
+    cd "$GOPATH/src/github.com/cybozu-go/aptutil" && \
+    git checkout "v$VERSION" && \
+    go install github.com/cybozu-go/aptutil/...
 
 RUN apt-get update && \
     apt-get install ca-certificates
