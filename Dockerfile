@@ -1,6 +1,6 @@
-FROM golang:1.11 as builder
+FROM golang:1.15 as builder
 
-ARG VERSION=1.4.1
+ARG VERSION=1.4.2
 
 ENV CGO_ENABLED=0 \
     GODEBUG=netdns=go
